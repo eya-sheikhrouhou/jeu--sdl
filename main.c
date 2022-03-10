@@ -1,7 +1,3 @@
-//#include <SDL/SDL.h>
-//#include <stdbool.h>
-//#include "backg.h"
-
 /*bool collision(SDL_Rect* rect1,SDL_Rect* rect2)
 {
     if(rect1->y >= rect2->y + rect2->h)
@@ -15,76 +11,7 @@
     return 1;
 }
 */ 
-/*
-int main(int argc, char** argv)
-{
-    SDL_Init(SDL_INIT_EVERYTHING);
-    SDL_Surface *screen;
-    background B;
-    Uint32 start;
-    const int FPS=30;
-   // atexit(SDL_Quit);
-   SDL_Event event;
-    screen= SDL_SetVideoMode(1368,801, 32, SDL_SWSURFACE);
-    bool running = true;
-    int b[2] = {0,0};
-initialiser_background(&B);
-    while(running) {
-   start=SDL_GetTicks();
-   
-            
-        while(SDL_PollEvent(&event)) {
-            switch(event.type) {
-                case SDL_QUIT:
-                    running = false;
-                    break;
-                case SDL_KEYDOWN:
-                    switch(event.key.keysym.sym)
-                    {
-                        case SDLK_RIGHT:
-                            scrolling_right (&B);
-                            break;
-                        case SDLK_LEFT:
-                            scrolling_left (&B); 
-                            break;
-                        case SDLK_ESCAPE:
-                            running = false;
-                            break;
-                    }
-                    break;
-                case SDL_KEYUP:
-                    switch(event.key.keysym.sym)
-                    {
-                        case SDLK_RIGHT:
-                           scrolling_right (&B);
-                            break;
-                        case SDLK_LEFT:
-                           scrolling_left (&B); 
-                            break;
-                    }
-                    break;
-            }
-        }
- }
-       
-        
-        //render
 
-afficher_background(screen,&B);
-        SDL_Flip(screen);
-  if(1000/FPS>SDL_GetTicks()-start)
-      SDL_Delay(1000/FPS-(SDL_GetTicks()-start));
-        
-        
-    
-    //liberer(b);
-   free_memory (&B);
-   SDL_Quit();
-
-    return 0;
- 
-}
-*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

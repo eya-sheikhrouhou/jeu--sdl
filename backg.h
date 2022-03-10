@@ -1,21 +1,3 @@
-/*#include <stdio.h>
-#include <stdlib.h>
-#include <SDL/SDL.h>
-#include <SDL/SDL_image.h>
-
-typedef struct  
-{
-
-SDL_Surface *background,*mq,*mq2; /* !< Surface. */
-/*SDL_Rect camera,posback2,posback1; /* !< Rectangle */
-
-/*}background;
-void initialiser_background (background *b);
-void afficher_background (SDL_Surface *screen,background *b);
-void scrolling_right (background *b);
-void scrolling_left (background *b);
-void free_memory (background *b );
-*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
