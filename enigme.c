@@ -107,3 +107,51 @@ void genererEnigme(enigme *e )
     }
 
 }
+
+void genererEnigmemed(enigme *e )
+{
+    int r,i;
+    srand(time(NULL));
+    FILE *fq=NULL;
+    FILE *fch=NULL;
+    FILE *frep=NULL;
+
+    fq=fopen("medquestion.txt","r");
+    fch=fopen("medchoix.txt","r");
+    frep=fopen("medreponseJuste.txt","r");
+
+    r=rand()%4;
+
+    for (i=0 ; i<=r ; i++)
+    {
+        fscanf(fq,"%s\n",e->question);
+        fscanf(fch,"%s %s %s\n",e->r1,e->r2,e->r3);
+        fscanf(frep,"%d\n",&e->reponsejuste);
+    }
+
+}
+
+void genererEnigmehard(enigme *e )
+{
+    int r,i;
+    srand(time(NULL));
+    FILE *fq=NULL;
+    FILE *fch=NULL;
+    FILE *frep=NULL;
+
+    fq=fopen("hardquestion.txt","r");
+    fch=fopen("hardchoix.txt","r");
+    frep=fopen("hardreponseJuste.txt","r");
+
+    r=rand()%4;
+
+    for (i=0 ; i<=r ; i++)
+    {
+        fscanf(fq,"%s\n",e->question);
+        fscanf(fch,"%s %s %s\n",e->r1,e->r2,e->r3);
+        fscanf(frep,"%d\n",&e->reponsejuste);
+    }
+
+}
+
+
