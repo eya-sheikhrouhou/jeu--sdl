@@ -101,9 +101,9 @@ void genererEnigme(enigme *e )
 
     for (i=0 ; i<=r ; i++)
     {
-        fscanf(fq,"%s",e->question);
-        fscanf(fch,"%s %s %s",e->r1,e->r2,e->r3);
-        fscanf(frep,"%d",&e->numRepJuste);
+        fscanf(fq,"%s\n",e->question);
+        fscanf(fch,"%s %s %s\n",e->r1,e->r2,e->r3);
+        fscanf(frep,"%d\n",&e->numRepJuste);
     }
 
 }
