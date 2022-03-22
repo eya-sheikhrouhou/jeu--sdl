@@ -103,7 +103,7 @@ void genererEnigme(enigme *e )
     {
         fscanf(fq,"%s\n",e->question);
         fscanf(fch,"%s %s %s\n",e->r1,e->r2,e->r3);
-        fscanf(frep,"%d\n",&e->numRepJuste);
+        fscanf(frep,"%d\n",&e->reponsejuste);
     }
 
 }
