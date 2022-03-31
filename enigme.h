@@ -12,6 +12,7 @@ typedef struct
 	char reponse2[30] ;
 	char reponse3[30] ;
 	int reponsejuste ;
+	int niveau ;
 	SDL_Surface *q;
 	SDL_Surface *r1;
 	SDL_Surface *r2;
