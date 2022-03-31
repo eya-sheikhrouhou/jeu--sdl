@@ -12,6 +12,7 @@ typedef struct
 	char reponse2[30] ;
 	char reponse3[30] ;
 	int reponsejuste ;
+	int niveau ;
 	SDL_Surface *q;
 	SDL_Surface *r1;
 	SDL_Surface *r2;
@@ -29,7 +30,9 @@ void InitEnigme(enigme * e, char *nomfichier);
 void animer (enigme * e);
 void sauvegarder (personne p, background b, char * nomfichier) ; 
 int charger ( personne * p, background *b , char * nomfichier);
-enigme generer(char * nom_du _fichier) ;
+enigme genererEnigme(char * nom_du _fichier) ;
+enigme genererEnigmemed(char * nom_du _fichier) ;
+enigme genererEnigmehard(char * nom_du _fichier) ;
 
 
 #endif
